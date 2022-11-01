@@ -1,2 +1,2 @@
 # color-chef
-Color Palette manager in React / Rust
+OS native application for managing color palettes in React / Rust using Tauri
