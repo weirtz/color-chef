@@ -1,2 +1,2 @@
 # color-chef
-OS native application for managing color palettes in React / Rust using Tauri
+Application for managing color palettes in React / Rust using Tauri for running natively on OS
