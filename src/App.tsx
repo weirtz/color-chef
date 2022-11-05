@@ -5,8 +5,10 @@ import { SetStateAction, useState } from "react";
 import { invoke } from "@tauri-apps/api";
 
 function App() {
+
   const [color, setColor] = useState("#1fa9f4");
   const[gradient, setGradient] = useState([]);
+
   return (
     <div>
       <SketchPicker 
@@ -19,17 +21,16 @@ function App() {
           });
         }}
       />
-      {gradient.map(color => 
-      <div style={{
-        padding: "2rem",
-        backgroundColor: 'rgb(${color[0]}, ${color[1]}, ${color[2]})'
+      {gradient.map((color, index) => (
+      <div key={index} style={{
+        backgroundColor: 'rgb(' + color[0] + ',' + color[1] + ',' + color[2] + ')', 
+        padding: "0.5rem"
       }}>
         rgb({color[0]}, {color[1]}, {color[2]})
       </div>
-      )}
+      ))}
     </div>
   );
-
 }
 
 export default App;
