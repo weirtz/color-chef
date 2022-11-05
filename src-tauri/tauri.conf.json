@@ -57,8 +57,8 @@
         "fullscreen": false,
         "height": 600,
         "resizable": true,
-        "title": "color-chef",
-        "width": 800
+        "title": "Color Chef",
+        "width": 1000
       }
     ]
   }
