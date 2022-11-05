@@ -6,6 +6,6 @@ Application for managing color palettes in React / Rust using Tauri for running 
 * Rust
 
 ## Setup
-npm install
+`npm install`
 
-npm run tauri dev
+`npm run tauri dev`
